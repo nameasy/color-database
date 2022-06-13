@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
-    <title>Добавить проект</title>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Добавить проект</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="" rel="shortcut icon" type="image/x-icon">
     <link href="" rel="icon" sizes="16x16" type="image/png">
     <link href="" rel="icon" sizes="32x32" type="image/png">
     <link href="" rel="icon" sizes="96x96" type="image/png">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="assets/styles/base.min.css" rel="stylesheet">
-    <link href="assets/styles/style.min.css" rel="stylesheet">
-    <link href="assets/styles/util.min.css" rel="stylesheet">
+    <link href="assets/styles/base.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/styles/style.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -21,15 +24,15 @@
             <div class="cd-header-inner">
                 <div class="cd-header-logo">
                     <a href="index.html">
-                        <p class="cd-text-md">Color Database</p>
+                        <h4 class="cd-text-md">База данных</h4>
                     </a>
                 </div>
                 <nav class="cd-header-nav">
-                    <a class="cd-header-link" href="requests.html">Организации</a>
-                    <a class="cd-header-link" href="projects.html">Проекты</a>
+                    <a class="cd-nav-link" href="requests.html">Организации</a>
+                    <a class="cd-nav-link" href="projects.html">Проекты</a>
                 </nav>
-                <div class="cd-header-sign">
-                    <a class="cd-button cd-button-md cd-button-round cd-button-subtle" href="signin.html">Войти</a>
+                <div class="cd-header-login">
+                    <a class="cd-button cd-button-md cd-button-round cd-button-subtle" href="login.html">Войти</a>
                 </div>
             </div>
         </header>
@@ -46,10 +49,7 @@
                     <form class="cd-form" method="post">
                         <div class="cd-row" data-columns="1">
                             <div class="cd-col">
-                                <label class="cd-text-lg">
-                                    Организация
-                                    <span class="">*</span>
-                                </label>
+                                <label class="cd-text-lg">Организация <span>*</span></label>
                                 <select class="cd-select cd-select-lg cd-select-subtle">
                                     <option selected>Организация</option>
                                     <option value="17">Silver_Age</option>
@@ -76,52 +76,31 @@
                                 </select>
                             </div>
                             <div class="cd-col">
-                                <label class="cd-text-lg">
-                                    Помещение
-                                    <span class="">*</span>
-                                </label>
+                                <label class="cd-text-lg">Помещение <span>*</span></label>
                                 <textarea class="cd-textarea cd-textarea-lg cd-textarea-subtle" placeholder="Помещение"></textarea>
                             </div>
                             <div class="cd-col">
-                                <label class="cd-text-lg">
-                                    Дата
-                                    <span class="">*</span>
-                                </label>
+                                <label class="cd-text-lg">Дата <span>*</span></label>
                                 <input class="cd-input cd-input-lg cd-input-subtle" placeholder="Дата" type="date">
                             </div>
                             <div class="cd-col">
-                                <label class="cd-text-lg">
-                                    Ссылка на понравившиеся интерьеры
-                                    <span class="">*</span>
-                                </label>
+                                <label class="cd-text-lg">Ссылка на понравившиеся интерьеры <span>*</span></label>
                                 <input class="cd-input cd-input-lg cd-input-subtle" placeholder="Ссылка на понравившиеся интерьеры" type="text">
                             </div>
                             <div class="cd-col">
-                                <label class="cd-text-lg">
-                                    Контактное лицо
-                                    <span class="">*</span>
-                                </label>
+                                <label class="cd-text-lg">Контактное лицо <span>*</span></label>
                                 <input class="cd-input cd-input-lg cd-input-subtle" placeholder="Контактное лицо" type="text">
                             </div>
                             <div class="cd-col">
-                                <label class="cd-text-lg">
-                                    Телефон
-                                    <span class="">*</span>
-                                </label>
+                                <label class="cd-text-lg">Телефон <span>*</span></label>
                                 <input class="cd-input cd-input-lg cd-input-subtle" placeholder="Телефон" type="tel">
                             </div>
                             <div class="cd-col">
-                                <label class="cd-text-lg">
-                                    Почта
-                                    <span class="">*</span>
-                                </label>
+                                <label class="cd-text-lg">Почта <span>*</span></label>
                                 <input class="cd-input cd-input-lg cd-input-subtle" placeholder="Почта" type="email">
                             </div>
                             <div class="cd-col">
-                                <label class="cd-text-lg">
-                                    Предпочитаемый способ связи
-                                    <span class="">*</span>
-                                </label>
+                                <label class="cd-text-lg">Предпочитаемый способ связи <span>*</span></label>
                                 <select class="cd-select cd-select-lg cd-select-subtle">
                                     <option selected>Предпочитаемый способ связи</option>
                                     <option value="По телефону">По телефону</option>
@@ -130,10 +109,7 @@
                                 </select>
                             </div>
                             <div class="cd-col">
-                                <label class="cd-text-lg">
-                                    Вопросы, комментарии и пожелания
-                                    <span class="">*</span>
-                                </label>
+                                <label class="cd-text-lg">Вопросы, комментарии и пожелания <span>*</span></label>
                                 <textarea class="cd-textarea cd-textarea-lg cd-textarea-subtle" placeholder="Вопросы, комментарии и пожелания"></textarea>
                             </div>
                             <div class="cd-col">
@@ -153,7 +129,7 @@
     <script src="assets/scripts/jquery.min.js"></script>
     <script src="assets/scripts/headroom.min.js"></script>
     <script src="assets/scripts/jQuery.headroom.min.js"></script>
-    <script src="assets/scripts/script.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>
